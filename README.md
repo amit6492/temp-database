@@ -6,7 +6,7 @@ Database Operations:
 
 1. Create and delete tables.
 2. Define columns with types (STRING or INT)
-3. Insert, show, and Where rows.
+3. Insert, show, and Filter(Where) rows.
 4. Concurrency Control: Mutex (Already present in coroutine)
 5. Ensures thread-safe access to shared resources using Mutex.
 
@@ -56,14 +56,14 @@ name=Amit
 age=32  
 Row inserted into table users.  
 
-Print Table  
+Show Table  
 Choose an option: 4  
 Enter table name: users  
 Table: users  
 name    age  
 Amit   32  
 
-Filter Rows  
+Filter(WHERE) Rows  
 Choose an option: 5  
 Enter table name: users  
 Enter WHERE condition (e.g., age > 20): age > 20  
@@ -77,6 +77,12 @@ Delete Table
 # Thread Safety:  
 The project uses kotlinx.coroutines.sync.Mutex to ensure concurrent operations on tables and the database are thread-safe.
 Critical sections are wrapped in withLock.
+
+# What more can we do   
+1. We can add Airthmetic Operations
+2. We can put a fitler for contains
+3. Apply operations on the Complete Columns
+4. Delete Rows
 
 # Author
 Created by Amit6492. 😊
