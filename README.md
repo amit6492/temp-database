@@ -23,11 +23,10 @@ Go to MainActivity Class and run the main function (Note - Dont run the whole Ap
 1. Create Table  
 2. Add Column to Table  
 3. Insert Row into Table  
-4. Print Table  
-5. Filter Rows  
-6. List Tables  
-7. Delete Table  
-8. Exit  
+4. Show Table  
+5. WHERE filter   
+6. Delete Table  
+7. Exit  
 
 
 # Examples  
@@ -40,36 +39,35 @@ Add Columns
 Choose an option: 2  
 Enter table name: users  
 Enter column name: name  
-Enter column type (STRING/INT): STRING   
-Column name added to table users.  
+Enter column type (STRING/INT): STRING  
+Column name added to table users. 
 
 Choose an option: 2  
 Enter table name: users  
 Enter column name: age  
 Enter column type (STRING/INT): INT  
 Column age added to table users.  
-Insert Rows    
 
+Insert Rows    
 Choose an option: 3  
 Enter table name: users  
-Enter row data as key=value pairs (e.g., name=John "press enter" age=30). Enter blank to finish.  
-name=Alice  
-age=25  
+Enter row data as key=value pairs (e.g., name=Amit "press enter" age=32). Enter blank to finish.  
+name=Amit  
+age=32  
 Row inserted into table users.  
-Print Table  
 
+Print Table  
 Choose an option: 4  
 Enter table name: users  
 Table: users  
 name    age  
-Alice   25  
-Filter Rows  
+Amit   32  
 
+Filter Rows  
 Choose an option: 5  
 Enter table name: users  
-Enter filter condition (e.g., age > 20): age > 20  
-Filtered rows: [{name=Alice, age=25}]  
-List Tables    
+Enter WHERE condition (e.g., age > 20): age > 20  
+Filtered rows: [{name=Amit, age=32}]   
 
 Choose an option: 6  
 Existing tables: users  
